@@ -1,0 +1,47 @@
+{
+  "Ethereum Mainnet": {
+    "accounts": ["0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80", "0xac0974bebb9a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"],
+    "rpc_url": "https://mainnet.infura.io/v3/8879adc5ace644639944a6b9505248c8",
+    "contracts": {
+      "USDT": "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+    }
+  },
+  "Sepolia": {
+    "accounts": ["0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80", "0xac0974bebb9a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"],
+    "rpc_url": "https://sepolia.infura.io/v3/8879adc5ace644639944a6b9505248c8",
+    "contracts": {
+      "USDT": "0xaA8E23Fb1079EA71e0a56F48a2aA51851D8433D0"
+    }
+  },
+  "BNB Smart Chain Mainnet": {
+    "accounts": ["0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80", "0xac0974bebb9a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"],
+    "rpc_url": "https://bsc-dataseed2.binance.org",
+    "contracts": {
+      "USDT": "0x55d398326f99059fF775485246999027B3197955"
+    }
+  },
+  "BNB Smart Chain Testnet": {
+    "accounts": ["0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80", "0xac0974bebb9a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"],
+    "rpc_url": "https://bsc-testnet.publicnode.com",
+    "contracts": {
+      "USDT": "0x337610d27c682E347C9cD60BD4b3b107C9d34dDd"
+    }
+  },
+  "Arbitrum One": {
+    "accounts": ["0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80", "0xac0974bebb9a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"],
+    "rpc_url": "https://arbitrum-mainnet.infura.io/v3/8879adc5ace644639944a6b9505248c8",
+    "contracts": {
+      "USDT": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
+    }
+  },
+  "Arbitrum Sepolia": {
+    "accounts": ["0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80", "0xac0974bebb9a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"],
+    "rpc_url": "https://arb-sepolia.g.alchemy.com/v2/wdgZeOPEg7mgxO4anXV5Jaq3M17NxtAW",
+    "contracts": {
+      "USDT": "0x93d67359A0f6F117150a70fDde6BB96782497248"
+    }
+  },
+  "Polygon": {
+    "rpc_url": "https://polygon.llamarpc.com"
+  }
+}
