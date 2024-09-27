@@ -1,16 +1,11 @@
-const erc20Client = require('./erc20_client');
+const config = require('./config');
 const {connectBlockchain} = require('./connection');
+const {createAccount} = require("./account");
 
 (async function () {
-    const usdtAddr = '0x7CcD96eb0C8D8ACc3e4Db4c84a4f5B8649bd2677';
-    const provider = await connectBlockchain();
-    const erc20Cli = erc20Client.createClient(usdtAddr, provider);
-    const name = await erc20Cli.name();
-    const symbol = await erc20Cli.symbol();
-    const decimals = await erc20Cli.decimals();
-    console.log(name);
-    console.log(symbol);
-    console.log(decimals);
-
+    const provider = await connectBlockchain(config.chainNames.ETH_SEPOLIA);
+    const account = createAccount('0xB9FF0616ce8ACAB98F71de2136A6aA3E01878DCe', provider);
+    const balance = await account.getBalance();
+    console.log('balance: ', balance);
 })();
 

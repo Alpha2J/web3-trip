@@ -10,20 +10,7 @@ function randomPrivateKey() {
     return randomWallet.privateKey;
 }
 
-function generatePrivateKey(c) {
-    let result = '0x';
-    for (let i = 0; i < 64; i++) {
-        result = result + c;
-    }
-    return result;
-}
-
 async function signMessage(privateKey, msg) {
     const signer = new ethers.Wallet(privateKey);
     return signer.signMessage(msg);
-}
-
-function address(c) {
-    let privateKey = generatePrivateKey(c);
-    return privateKeyToAddress(privateKey);
 }
