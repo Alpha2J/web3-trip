@@ -97,6 +97,22 @@ function allWords(locale) {
     return wordlist._decodeWords();
 }
 
+function toWei(amount) {
+    return ethers.parseEther(amount);
+}
+
+function toUnit(amount, decimals) {
+    return ethers.parseUnits(amount, decimals);
+}
+
+function fromWei(amount) {
+    return ethers.formatEther(amount);
+}
+
+function fromUnit(amount, decimals) {
+    return ethers.formatUnits(amount, decimals);
+}
+
 module.exports = {
     privateKeyToAddress,
     randomPrivateKey,
@@ -107,5 +123,9 @@ module.exports = {
     walletsFromPhrase,
     isValidPhrase,
     isValidWord,
-    allWords
+    allWords,
+    toWei,
+    toUnit,
+    fromWei,
+    fromUnit
 }
